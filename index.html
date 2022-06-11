@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,600;1,300&family=Lobster&display=swap" rel="stylesheet">
+    <title>Speaker Submission</title>
+</head>
+<body>
+    <header>
+        <h1>Speaker Submission</h1>
+        <p>Come spice up our EVENT with your outstanding ideas!</p>
+    </header>
+    <main>
+        <form action="#" method="POST">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="you@example.com" required>
+
+            <p id="talk">Type of Talk</p>
+
+            <label for="mainStage" class="radioLabel">Main Stage</label>
+            <input type="radio" name="talkType" id="mainStage" value="mainStage" checked>
+
+            <label for="workshop" class="radioLabel">Workshop</label>
+            <input type="radio" name="talkType" id="workshop" value="workshop">
+
+            <label for="size">T-Shirt Size</label>
+            <select name="size" id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+
+            <label for="abstract">Abstract</label>
+            <textarea name="abstract" id="abstract" placeholder="what's your event about?"></textarea>
+            <p id="describe">Describe your talk in 500 words or less</p>
+
+            <label for="agree">I agree to the terms & conditions</label>
+            <input type="checkbox" name="agree" id="agree" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
